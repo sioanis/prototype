@@ -1,0 +1,14 @@
+@import 'bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
+
+@include keyframes(moveUp) {
+  from {
+    @include transform(translateY(0));
+  }
+  to {
+    @include transform(translateY(-100%));
+  }
+}
+
+.moveUp {
+    animation: moveUp 1s ease;
+}
