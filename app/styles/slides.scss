@@ -1,0 +1,45 @@
+.slides {
+	.slide {
+		height: 100vh;
+		width: 100vw;
+
+		.img, .copy {
+			height: 100%;
+		}
+
+		.img {
+			width: 60%;
+			display: inline-block;
+			float: left;
+			background: skyblue;
+		}
+
+		.copy {
+			padding: 80px;
+			width: 40%;
+			display: inline-block;
+			float: right;
+			background: lightgreen;
+		}
+
+		&:nth-child(2) {
+			.img {
+				background: mediumpurple;
+			}
+			.copy {
+				background: silver;
+			}
+		}
+
+		&:nth-child(3) {
+			.img {
+				background: mediumaquamarine;
+			}
+			.copy {
+				background: salmon;
+			}
+		}
+
+
+	}
+}
