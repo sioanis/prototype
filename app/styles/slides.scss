@@ -1,3 +1,4 @@
+
 body {
 	overflow: hidden;
 	height: 100%;
@@ -11,25 +12,48 @@ body {
 		position: absolute;
 		top: 0;
 		animation-fill-mode: forwards;
-		
+
 		.img, .copy {
 			height: 100%;
 		}
 
 		.img {
-			width: 60%;
+			width: 70%;
 			display: inline-block;
 			float: left;
-			background: skyblue;
+			background: $light-blue;
 		}
 
 		.copy {
 			padding: 80px;
-			width: 40%;
+			width: 30%;
 			display: inline-block;
 			float: right;
-			background: lightgreen;
+			background: $white;
+
+      h1 {
+        font-size: 4vw;
+      }
+
+      h2 {
+        font-size: 3vw;
+      }
+
+      h3 {
+        font-size: 2vw;
+      }
+
+      a {
+        padding: 1.5vw 3vw;
+        display: block;
+        text-align: center;
+        background-color: $orange;
+        font-size: 1.5vw;
+        color: $black;
+        text-transform: uppercase;
+      }
 		}
+
 		&:nth-child(1) {
 			z-index: 3;
 		}
@@ -37,20 +61,14 @@ body {
 		&:nth-child(2) {
 			z-index: 2;
 			.img {
-				background: mediumpurple;
-			}
-			.copy {
-				background: silver;
+				background: $iris;
 			}
 		}
 
 		&:nth-child(3) {
 			z-index: 1;
 			.img {
-				background: mediumaquamarine;
-			}
-			.copy {
-				background: salmon;
+				background: $magenta;
 			}
 		}
 

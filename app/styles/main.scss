@@ -5,5 +5,8 @@ $icon-font-path: '../fonts/';
 @import 'bower_components/animate-sass/_animate.scss';
 // endbower
 
+
+@import 'app/styles/_variables.scss';
 @import 'app/styles/animate.scss';
 @import 'app/styles/slides.scss';
+
